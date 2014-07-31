@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/etLoaderContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data loader status...."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Button 
+        android:id="@+id/btnLICache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadInternalCache"
+        android:text="Load From Internal Cache"/>
+    
+    <Button 
+        android:id="@+id/btnLECache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadExternalCache"
+        android:text="Load From External Cache"/>
+    
+    <Button 
+        android:id="@+id/btnLEPrivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadPrivateExternalFile"
+        android:text="Load External Private"/>
+    
+    <Button 
+        android:id="@+id/btnLEPublic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadPublicExternalFile"
+        android:text="Load External Public"/>
+    
+    <Button 
+        android:id="@+id/btnPrevious"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="previous"
+        android:text="Previous"/>
+
+</LinearLayout>

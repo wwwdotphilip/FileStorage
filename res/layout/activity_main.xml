@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/etEnterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your name" />
+    
+    <Button 
+        android:id="@+id/btnICache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveInternalCache"
+        android:text="Internal Cache"/>
+    
+    <Button 
+        android:id="@+id/btnECache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveExternalCache"
+        android:text="External Cache"/>
+    
+    <Button 
+        android:id="@+id/btnEPrivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="savePrivateExternalFile"
+        android:text="External Private"/>
+    
+    <Button 
+        android:id="@+id/btnEPublic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="savePublicExternalFile"
+        android:text="External Public"/>
+    
+    <Button 
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="next"
+        android:text="Next"/>
+
+</LinearLayout>
